@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de </title>
+    <title>Ejemplo  </title>
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         .campo-texto {
             padding: 10px;
@@ -41,20 +42,26 @@
     </style>
 </head>
 <body>
-    <h1>formularios</h1>
-    <form action="/guardar-registro" method="POST">
-        <label for="usuario">Nombre de usuario:</label>
+    <nav>
+            <a href="../index.html"> Volver al Inicio</a>
+        </nav>
+    <main>
+        <h1>formularios</h1>
+        <form action="/guardar-registro" method="POST">
+            <label for="usuario">Nombre de usuario:</label>
 
-        <input class="campo-texto" type="text" id="usuario" placeholder="Ej. jperez123">
-        <br>
-    
-        <label for="clave">Contraseña:</label>
-        <input type="password" id="clave">
-        <br>
-        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-        <input type="date" id="fecha_nacimiento">
-        <br>
-        <button class="boton-enviar" type="submit">Registrarse en el sistema</button>
-    </form>
+            <input class="campo-texto" type="text" id="usuario" placeholder="Ej. jperez123">
+            <br>
+        
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave">
+            <br>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento">
+            <br>
+            <button class="boton-enviar" type="submit">Registrarse en el sistema</button>
+        </form>
+    </main>
+    <script src="../js/app.js"></script>
 </body>
 </html>

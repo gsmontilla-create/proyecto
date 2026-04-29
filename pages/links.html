@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enlaces e imagenes</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>enlaces</h1>
+    <header>
+        <nav>
+            <a href="../index.html"> Volver al Inicio</a>
+        </nav>
+    </header>
+    <main>
+        <section class="page-section">
+            <h1>Enlaces</h1>
+            <p>Accede a recursos externos y vuelve al inicio con estilo.</p>
+            <div>
+                <a href="http://www.iemsantateresita.edu.co" class="content-link" target="_blank" rel="noopener">ir a la página del colegio</a>
+            </div>
+            <div>
+                <a href="../index.html" class="glow-btn home-btn">Volver al Inicio</a>
+            </div>
+        </section>
 
-    <!-- Etiqueta <a>
-         href: la direccion del recurso  -->
-         <a href="http://www.iemsantateresita.edu.co">ir a la pagina del colegio</a>
+        <section class="page-section">
+            <h2>Imágenes</h2>
+            <!-- etiqueta de comentario <img>
+                 arg: la dirección del recurso de la imagen -->
+            <img src="../images/ing_bojackhorseman.avif" alt="imagen bbj" class="imagen-fluida">
+        </section>
+    </main>
 
-         <a href="../index.html"></a>
-         
-         <h1>imagenes</h1>
-     <!--etiqueta de comentario <img>
-     arg:la direccion del recurso de la imagen -->
- 
-     <img src="../images/ing_bojackhorseman.avif" alt="imagen bbj">
-
+    <script src="../js/app.js"></script>
 </body>
 </html>

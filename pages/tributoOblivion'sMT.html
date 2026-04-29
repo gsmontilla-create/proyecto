@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oblivion's Mighty Trash | Premium Tribute</title>
+    
+    <link rel="stylesheet" href="/css/tributostyle.css">
+</head>
+<body>
+    <div class="grain"></div>
+    <div class="scanline"></div>
+
+    <div class="main-container">
+        
+        <section id="menu-view" class="view">
+            <div class="hero-header">
+                <span class="tag">MEDELLÍN // 2026 // UNDERGROUND</span>
+                <h1>OBLIVION'S <br> <span class="glitch">MIGHTY TRASH</span></h1>
+            </div>
+            
+            <nav class="main-menu">
+                <button class="glow-btn" onclick="showView('tribute-view')">ADORA EL TRASH</button>
+                <button class="glow-btn" onclick="showView('bio-view')">MI SENTIR</button>
+                <button class="glow-btn" onclick="showView('albums-view')">DISCOGRAFÍA</button>
+                <a href="https://www.youtube.com/@oblivionsmightytrash" target="_blank" class="btn-link">CANAL OFICIAL</a>
+            </nav>
+            <a href="../index.html" class="glow-btn">Volver al Inicio</a>
+        </section>
+
+        <section id="tribute-view" class="view hidden">
+            <div id="albumBtn" class="album-card">
+                <div class="cover">
+                    <img src="/images/OBT.jpg" alt="Oblivion" class="artista-img">
+                </div>
+                <div class="playing-bar"><span></span><span></span><span></span></div>
+                <p class="hint">TAP PARA SOLTAR BARRA</p>
+            </div>
+            <div class="lyrics-box">
+                <p id="text-target">"El rap es la vida tal como uno la nombra..."</p>
+            </div>
+            <button id="play-pause-btn" class="glow-btn" onclick="toggleSecondMusic()">REPRODUCIR MÚSICA EXTRA</button>
+            <button id="pause-btn" class="glow-btn" onclick="pauseMusic()">PAUSAR</button>
+            <button class="back-btn" onclick="showView('menu-view')">← VOLVER</button>
+        </section>
+        <section id="bio-view" class="view hidden">
+            <h2 class="section-title">MI SENTIR</h2>
+            <div class="glass-card">
+                <p>La música de <strong>Oblivion</strong> me marcó por ser real. Sus beats lo-fi son el soundtrack perfecto para el parche.</p>
+                <p>Me gusta su forma de escribir porque no finge nada, es sensatez pura.</p>
+            </div>
+            <button class="back-btn" onclick="showView('menu-view')">← VOLVER</button>
+        </section>
+
+        <section id="albums-view" class="view hidden">
+    <h2 class="section-title">DISCOGRAFÍA</h2>
+    <div class="album-grid">
+        <div class="album-item" onclick="showView('nma-view')">
+            <div class="mini-cover">2023</div>
+            <span>No Me Acuerdo</span>
+        </div>
+        <div class="album-item" onclick="showView('loops-view')">
+            <div class="mini-cover">2022</div>
+            <span>LO-POCALYPSE LOOPS</span>
+        </div>
+        <div class="album-item" onclick="showView('rap-game-view')">
+            <div class="mini-cover">2026</div>
+            <span>The Rap Game, Vol. 1</span>
+        </div>
+        <div class="album-item" onclick="showView('nonstop-view')">
+            <div class="mini-cover">2021</div>
+            <span>THA NONSTOP</span>
+        </div>
+        <div class="album-item" onclick="showView('hermanos-view')">
+            <div class="mini-cover">2024</div>
+            <span>Hermanos Desastre</span>
+        </div>
+        <div class="album-item" onclick="showView('cloud-view')">
+            <div class="mini-cover">2024</div>
+            <span>OMT x CLOUD Sounds</span>
+        </div>
+        <div class="album-item" onclick="showView('monsieur-view')">
+            <div class="mini-cover">2023</div>
+            <span>MONSIEUR</span>
+        </div>
+    </div>
+    <button class="back-btn" onclick="showView('menu-view')">← VOLVER AL MENÚ</button>
+</section>
+
+<section id="nma-view" class="view hidden">
+    <h2>No Me Acuerdo</h2>
+    <div class="glass-card"><p>Álbum del 2023. Un diario personal sobre la vida en Medellín y la sensatez de ser uno mismo.</p></div>
+    <button class="back-btn" onclick="showView('albums-view')">← VOLVER A DISCOS</button>
+</section>
+
+<section id="loops-view" class="view hidden">
+    <h2>LO-POCALYPSE LOOPS</h2>
+    <div class="glass-card"><p>Lanzado en 2022. Sonidos lo-fi y letras crudas que definieron el inicio del estilo de Oblivion.</p></div>
+    <button class="back-btn" onclick="showView('albums-view')">← VOLVER A DISCOS</button>
+</section>
+
+<section id="rap-game-view" class="view hidden">
+    <h2>The Rap Game, Vol. 1</h2>
+    <div class="glass-card"><p>Lanzamiento 2026. La evolución del sonido underground hacia lo profesional.</p></div>
+    <button class="back-btn" onclick="showView('albums-view')">← VOLVER A DISCOS</button>
+</section>
+
+<section id="nonstop-view" class="view hidden">
+    <h2>THA NONSTOP</h2>
+    <div class="glass-card"><p>EP 2021. Las bases del rap que Oblivion empezó a pulir desde el encierro.</p></div>
+    <button class="back-btn" onclick="showView('albums-view')">← VOLVER A DISCOS</button>
+</section>
+
+<section id="hermanos-view" class="view hidden">
+    <h2>Hermanos Desastre</h2>
+    <div class="glass-card"><p>EP 2024. Colaboración y rimas que exploran la cotidianidad del parche.</p></div>
+    <button class="back-btn" onclick="showView('albums-view')">← VOLVER A DISCOS</button>
+</section>
+
+<section id="cloud-view" class="view hidden">
+    <h2>OMT x CLOUD Sounds</h2>
+    <div class="glass-card"><p>EP 2024. Fusión de ritmos atmosféricos con el estilo contestatario de OMT.</p></div>
+    <button class="back-btn" onclick="showView('albums-view')">← VOLVER A DISCOS</button>
+</section>
+
+<section id="monsieur-view" class="view hidden">
+    <h2>MONSIEUR</h2>
+    <div class="glass-card"><p>EP 2023. Un proyecto corto pero contundente con barras de alto nivel.</p></div>
+    <button class="back-btn" onclick="showView('albums-view')">← VOLVER A DISCOS</button>
+</section>
+       
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="/music/No Me Acuerdo.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="second-music" loop>
+        <source src="/music/Medallo Bullies.mp3" type="audio/mpeg">
+    </audio>
+
+     
+    <script src="/js/tributo.js"></script>
+</body>
+</html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document object model</title>
+    <link rel="stylesheet" href="../css/style.css">
 
 
 
@@ -16,11 +17,12 @@
 </head>
 
 <body>
-
-    <div id="tarjeta">
-        <h2 class="titulo">Texto Original</h2>
-        <p>Este texto no cambiará.</p>
-    </div>
+    <main>
+        <div id="tarjeta">
+            <h2 class="titulo">Texto Original</h2>
+            <p>Este texto no cambiará.</p>
+        </div>
+    </main>
 
     <script>
 
@@ -30,7 +32,7 @@
         miTitulo.textContent = "¡Texto Cambiado con JS!";
         miTarjeta.style.backgroundColor = "#e0f7fa";
         miTarjeta.classList.add("tarjeta-activa"); // Añade una clase CSS preexistente</script>
-
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

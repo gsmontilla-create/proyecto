@@ -4,40 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>condicionales</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <main>
+        <script>
+            //prompt permite leer un valor desde el teclado
+            let edad = prompt("diga su edad");
 
-    <script>
-        //prompt permite leer un valor desde el teclado
-        let edad = prompt("diga su edad");
+            if (edad >= 18) 
 
-        if (edad >= 18) 
-
-            alert("eres mayor de edad");
-         else 
-            alert("eres menor de edad");
+                alert("eres mayor de edad");
+             else 
+                alert("eres menor de edad");
 
 
 
-            //
-            let calificacion = prompt("introduzca su calificación");
-           
-            if (calificacion < 3.5) 
-                alert("desempeño bajo");
-               else if (calificacion < 4) 
-                alert("desempeño medio");
-               else if (calificacion < 4.5) 
-                alert("desempeño alto");
-               else if (calificacion <= 5) 
-                alert("desempeño superior");
-               else 
-                alert(" la calificación no válida");
-            
+                //
+                let calificacion = prompt("introduzca su calificación");
+               
+                if (calificacion < 3.5) 
+                    alert("desempeño bajo");
+                   else if (calificacion < 4) 
+                    alert("desempeño medio");
+                   else if (calificacion < 4.5) 
+                    alert("desempeño alto");
+                   else if (calificacion <= 5) 
+                    alert("desempeño superior");
+                   else 
+                    alert(" la calificación no válida");
                 
-        
+                    
+            
 
+        
+        </script>
+    </main>
     
-    </script>
-    
+    <script src="../js/app.js"></script>
 </body>
 </html>
